@@ -1,0 +1,172 @@
+/* this is a CSS comment */
+
+/* here, we change some of the default styles on our main document elements */
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/* this targets everything and removes a weird and annoying default browser style */
+* {
+	box-sizing: border-box;
+}
+
+.gallery1{
+
+    margin: 0;
+  padding: 40px;
+  color: #222;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.sbw{
+  font-size: clamp(30px, 9vw, 90px);
+  font-weight: bolder;
+  letter-spacing: -4px;
+  line-height: 0.8;
+  max-width: 700px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block; /* Unbedingt erforderlich, damit transform funktioniert */
+  transform: scaleY(1.4);  /* Streckt den Text auf 150 % der Originalhöhe */
+  transform-origin: bottom;
+  letter-spacing: -0.1em;
+
+  
+}
+
+
+
+
+
+
+
+
+/* den text fir drop ze klicken fir op dei verschieden storyen ze kommen  */
+.firsttext{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  top:50%;
+  left:50%;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* grid system mat den verschiedenen storien  */
+.gallery2 {
+	display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+
+}
+/* grid system mat den verschiedenen storien  */
+.gallery2 div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+
+
+
+/* eist sait introduction text */
+.introduction{
+  
+  font-size: 18px;
+  max-width: 500px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.5;
+
+  
+}
+
+
+/* // 1t sait text fir ze submiten */
+textarea {
+  width: 500px;
+  border: 1px solid #aaa;
+  height: 300px;
+  font-size: 10px;
+  padding: 15px;
+  resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+.seite-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+.storycontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  min-width: 0;
+}
+
+.textpage1 {
+  font-size: 15px;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.data1 {
+  font-size: 10px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  
+}
+
+.firstvideo {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+
+a{
+
+  color:blue;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.returnpage1{
+
+  position: fixed;   /* Löst den Link vom normalen Seitenfluss */
+  bottom: 0;         /* Klebt ihn direkt an den unteren Bildschirmrand */
+  left: 0;           /* Startet ganz links */
+  width: 100%;       /* Streckt den Link über die gesamte Bildschirmbreite (optional) */
+  text-align: center;/* Zentriert den Text im Link */
+  z-index: 9999; 
+
+}
+
+
+.return{
+
+  position: fixed;   /* Fixiert den Link am Bildschirm */
+  bottom: 20px;      /* Abstand vom unteren Rand */
+  left: 20px;        /* Abstand vom linken Rand */
+  z-index: 9999;
+
+
+
+}
