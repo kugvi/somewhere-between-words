@@ -30,13 +30,3 @@ function randomPage() {
   window.location.href = pages[randomIndex];
 }
 
-function sendStory() {
-    let story = document.getElementById("yourStory").value;
-
-    let subject = encodeURIComponent("A story for somewhere-between-words");
-    let body = encodeURIComponent(story);
-
-    window.location.href =
-        "mailto:kugvi999@gmail.com?subject=" + subject + "&body=" + body;
-
-}
