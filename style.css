@@ -45,6 +45,7 @@ html, body {
 /* den text fir drop ze klicken fir op dei verschieden storyen ze kommen  */
 .firsttext{
 	display: flex;
+  font-size: 15px;
   justify-content: center;
   align-items: center;
   top:50%;
@@ -163,7 +164,7 @@ a{
 .return{
 
   position: fixed;   /* Fixiert den Link am Bildschirm */
-  bottom: 20px;      /* Abstand vom unteren Rand */
+  bottom: 10px;      /* Abstand vom unteren Rand */
   left: 20px;        /* Abstand vom linken Rand */
   z-index: 9999;
 
@@ -172,8 +173,26 @@ a{
 
 .sendmeyourstory {
   
-  color: red;
-  font-size:15px;
+  color: rgb(255, 0, 208);
+  font-size:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:50%;
+  left:50%;
+  font-family:Arial, Helvetica, sans-serif;
+
+
+}
+
+
+.randomnp {
+
+  position:fixed;
+  bottom: 30px;      /* Abstand vom unteren Rand */
+  left: 20px; 
+
+
 
 
 }
