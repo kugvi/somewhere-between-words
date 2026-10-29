@@ -167,6 +167,13 @@ a{
   left: 20px;        /* Abstand vom linken Rand */
   z-index: 9999;
 
+}
+
+
+.sendmeyourstory {
+  
+  color: red;
+  font-size:15px;
 
 
 }
