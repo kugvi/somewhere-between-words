@@ -16,17 +16,24 @@ const currentPathName = window.location.pathname;
     // "page 7.html"
   ];
 
-  const indexOfCurrentPath = pages.indexOf(currentPathName);
+  let indexOfCurrentPath;
+  let stringToReplace = '';
+
+  for (let i = 0; i < pages.length; i++) {
+    if (currentPathName.indexOf(pages[i]) > -1) {
+      indexOfCurrentPath = i;
+      stringToReplace = pages[i];
+    }
+  }
 
   pages.splice(indexOfCurrentPath, 1);
 
-  console.log(pages)
+  console.log(window.location.pathname, stringToReplace)
 
 function randomPage() {
-
-
   const randomIndex = Math.floor(Math.random() * pages.length);
 
-  window.location.href = pages[randomIndex];
+
+  window.location.href = currentPathName.replace(stringToReplace, pages[randomIndex]);
 }
 
