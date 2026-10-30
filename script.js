@@ -12,7 +12,7 @@ const currentPathName = window.location.pathname;
     "/page-3.html",
     "/page-4.html",
     "/page-5.html",
-    // "page-6.html",
+    "/page-6.html",
     // "page 7.html"
   ];
 
